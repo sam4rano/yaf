@@ -17,7 +17,7 @@ const WhatWeDo = () => {
             <img src={imgOne} alt="img_one" />
           </div>
           <div className="">
-            <h1 className="font-[500] text-center">Network</h1>
+            <h1 className="font-[500] text-center">Networking</h1>
             <img src={imgTwo} alt="img_two" />
           </div>
         </div>

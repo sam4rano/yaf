@@ -11,11 +11,14 @@ const Home = () => {
       <HeroSection />
       <br />
       <Card />
+      <br />
       <WhatDefine />
+      <br />
       <WhatWeDo />
+      <br />
       <Footer />
     </>
-  )
+  );
 }
 
 export default Home
