@@ -1,56 +1,93 @@
-import React, { useState } from "react";
-import imgOne from "../images/img_1.jpg";
+// import React, { useState } from "react";
 
+// import { Image } from "./Image";
 
-const imgContainer = [
-  {
-    url: "img_1",
-    title: "church",
-    caption: "First Slide",
-  },
-  {
-    url: "img_2",
-    title: "church",
-    caption: "Second Slide",
-  },
-  {
-    url: "img_3",
-    title: "church",
-    caption: "Third Slide",
-  },
-  {
-    url: "img_4",
-    title: "church",
-    caption: "Third Slide",
-  },
+// const HeroSection = () => {
+
+ 
+//   return (
+    
+//   );
+// };
+
+// export default HeroSection;
+
+import React, { useState, useEffect, useRef } from "react";
+import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
+
+const featuredProducts = [
+  "/images/img_1.jpg",
+  "/images/img_2.jpg",
+  "/images/img_3.jpg",
+  "/images/img_4.jpg",
 ];
 
-const HeroSection = () => {
- 
-  return (
-    <>
-      {imgContainer.map((item, index) => (
-        <div key={index} className="col-sm-12">
-          <img
-            src={require("../images/" +
-              item.url +
-              ".jpg")}
-            className="img-fluid"
-            alt={item.title}
-          />
-          <h1>{item.caption}</h1>
-        </div>
-      ))}
-      {/* <div className="w-full select-none relative">
-        <img src={imgOne} alt="img_2" />
-        <img src={imgContainer.url} />
-        <div className="absolute w-full top-1/2 aspect-w-16 aspect-h-9 transform -translate-y-1/2 px-3 flex justify-between items-center">
-          <button >Previous</button>
-          <button>Next</button>
-        </div>
-      </div> */}
-    </>
-  );
-};
+let count = 0;
+let slideInterval;
 
-export default HeroSection;
+export default function HeroSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const slideRef = useRef();
+
+  const removeAnimation = () => {
+    slideRef.current.classList.remove("fade-anim");
+  };
+
+  useEffect(() => {
+    slideRef.current.addEventListener("animationend", removeAnimation);
+    slideRef.current.addEventListener("mouseenter", pauseSlider);
+    slideRef.current.addEventListener("mouseleave", startSlider);
+
+    startSlider();
+    return () => {
+      pauseSlider();
+    };
+    // eslint-disable-next-line
+  }, []);
+
+  const startSlider = () => {
+    slideInterval = setInterval(() => {
+      handleOnNextClick();
+    }, 3000);
+  };
+
+  const pauseSlider = () => {
+    clearInterval(slideInterval);
+  };
+
+  const handleOnNextClick = () => {
+    count = (count + 1) % featuredProducts.length;
+    setCurrentIndex(count);
+    slideRef.current.classList.add("fade-anim");
+  };
+  const handleOnPrevClick = () => {
+    const productsLength = featuredProducts.length;
+    count = (currentIndex + productsLength - 1) % productsLength;
+    setCurrentIndex(count);
+    slideRef.current.classList.add("fade-anim");
+  };
+
+  return (
+    <div ref={slideRef} className="w-full select-none relative">
+      <div className="aspect-w-16 aspect-h-9">
+        <img src={featuredProducts[currentIndex]} alt="" />
+      </div>
+
+      <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
+        <button
+          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
+          onClick={handleOnPrevClick}
+        >
+          <AiOutlineVerticalRight size={30} />
+        </button>
+        <button
+          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
+          onClick={handleOnNextClick}
+        >
+          <AiOutlineVerticalLeft size={30} />
+        </button>
+      </div>
+    </div>
+  );
+}

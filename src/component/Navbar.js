@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
+
+    
     <nav className="navbar">
       <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-md">
         <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">
