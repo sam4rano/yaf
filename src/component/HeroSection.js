@@ -67,7 +67,7 @@ export default function HeroSection() {
           to="/about"
           className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          <button className="absolute top-[330px] right-[650px] bg-teal-500 p-[12px] text-white rounded-md">
+          <button className="hover:bg-blue-700 absolute top-[330px] right-[650px] bg-teal-500 p-[12px] text-white rounded-md">
             JOIN US
           </button>
         </Link>
