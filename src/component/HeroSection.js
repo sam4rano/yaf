@@ -1,21 +1,8 @@
-// import React, { useState } from "react";
-
-// import { Image } from "./Image";
-
-// const HeroSection = () => {
-
- 
-//   return (
-    
-//   );
-// };
-
-// export default HeroSection;
-
+import { Link } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 
-const featuredProducts = [
+const featuredPics = [
   "/images/img_1.jpg",
   "/images/img_2.jpg",
   "/images/img_3.jpg",
@@ -57,21 +44,33 @@ export default function HeroSection() {
   };
 
   const handleOnNextClick = () => {
-    count = (count + 1) % featuredProducts.length;
+    count = (count + 1) % featuredPics.length;
     setCurrentIndex(count);
     slideRef.current.classList.add("fade-anim");
   };
   const handleOnPrevClick = () => {
-    const productsLength = featuredProducts.length;
-    count = (currentIndex + productsLength - 1) % productsLength;
+    const picsLength = featuredPics.length;
+    count = (currentIndex + picsLength - 1) % picsLength;
     setCurrentIndex(count);
     slideRef.current.classList.add("fade-anim");
   };
 
   return (
     <div ref={slideRef} className="w-full select-none relative">
-      <div className="aspect-w-16 aspect-h-9">
-        <img src={featuredProducts[currentIndex]} alt="" />
+      <div className="relative">
+        <img
+          src={featuredPics[currentIndex]}
+          alt=""
+          className="w-full max-h-[400px]"
+        />
+        <Link
+          to="/about"
+          className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+        >
+          <button className="absolute top-[330px] right-[650px] bg-teal-500 p-[12px] text-white rounded-md">
+            JOIN US
+          </button>
+        </Link>
       </div>
 
       <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">

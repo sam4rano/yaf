@@ -49,17 +49,10 @@ const Navbar = () => {
               href="#resp"
               className="inline-block p-[13px] text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
             >
-              Contact
+              Contact Us
             </span>
         </Link>
       </nav>
-
-      {/* <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/gallery">Gallery</Link>
-      <Link to="/event">Event</Link>
-      <Link to="/support">Support</Link>
-      <Link to="/contact">Contact Us</Link> */}
     </nav>
   );
 };
