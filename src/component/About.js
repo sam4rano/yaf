@@ -1,5 +1,8 @@
+import Footer from './Footer';
+
 const About = () => {
   return (
+    <>
     <div className="flex p-md">
       <div className="a">
         <h1 className="text-base text-gray-900 font-bold mb-2 p-md">
@@ -23,6 +26,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
