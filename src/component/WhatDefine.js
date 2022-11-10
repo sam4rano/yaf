@@ -3,18 +3,13 @@ import imgOne from '../images/impact.svg';
 
 const WhatDefine = () => {
   return (
-    <div class="flex justify-center p-[20px] ">
-      <div class="flex flex-row justify-between rounded-lg bg-white shadow-lg max-h-[400px] ">
-        <img
-          class=" w-[50%] h-9 md:h-auto object-cover md:w-48 pr-md rounded-t-lg md:rounded-none md:rounded-l-lg"
-          src={imgOne}
-          alt="card mg"
-        />
-        <div class="w-[50%] p-6 flex flex-col justify-start bg-teal-500">
-          <h3 class="text-white text-xl font-bold mb-2 p-md">
+    <div className="flex justify-center sm:h-auto scroll-m-lg sm:mb-[80px] md:pb-[40px]">
+      <div className="flex flex-row justify-between rounded-lg bg-white max-h-[400px] sm:flex-col">
+        <div className="w-[50%] p-6 flex flex-col justify-start bg-teal-500 hover:bg-[#f1c40f] sm:w-full">
+          <h3 className="text-white text-xl font-bold mb-2 p-md sm:font-medium sm:text-md sm:text-center sm:pt-md">
             WHAT DEFINE US
           </h3>
-          <p class="text-white text-base mb-4 p-md">
+          <p className="text-white text-base mb-2 p-md sm:text-[10px] sm:text-center">
             Young alight initiative is an initiative that brings together young
             individuals who want to make a difference in their generation. A
             youthful generation driven to serve as an example of excellence and
@@ -25,6 +20,11 @@ const WhatDefine = () => {
             free from social vices and corruption.
           </p>
         </div>
+        <img
+          className="w-1/2 h-9 md:h-auto object-cover md:w-48 pr-md rounded-t-lg md:rounded-none md:rounded-l-lg sm:w-full"
+          src={imgOne}
+          alt="card mg"
+        />
       </div>
     </div>
   );

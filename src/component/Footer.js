@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-teal-500 flex flex-row h-auto justify-around p-[20px]">
+    <div className="bg-teal-500 flex flex-row justify-around p-[20px] w-full h-auto sm:flex-wrap">
       <div className="w-1/5 text-xl font-bold mb-2 p-md">
         <Link to="/" className="text-white-900 text-white">
           YAF
         </Link>
       </div>
-      <div className="flex flex-col w-1/5">
+      <div className="flex flex-col w-1/5 sm:text-[14px]">
         <Link to="/about" className="text-white-500 text-md p-md text-white">
           About Us
         </Link>
@@ -23,7 +23,7 @@ const Footer = () => {
           Gallery
         </Link>
       </div>
-      <div className="flex flex-col w-1/5">
+      <div className="flex flex-col w-1/5 sm:text-[14px]">
         <Link to="/event" className="text-white-500 text-md p-md text-white">
           Event
         </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex flex-col w-2/5">
-        <p className="text-white-500 text-md p-md text-white">
+        <p className="text-white-500 text-md p-md text-white sm:flex sm:justify-center w-full">
           Youth Alive Initiative is a non-profit inter-denominational initiative
           of Joel Ayodele Adelani, our core value are nurturing and building
           capacity for a purpose driven young generation.

@@ -5,17 +5,16 @@ import WhatDefine from './WhatDefine';
 import Footer from './Footer';
 import WhatWeDo from './WhatWeDo';
 
+import Testimonial from './Testimonial';
+
 const Home = () => {
   return (
     <>
       <HeroSection />
       <br />
       <WhoWeAre />
-      <br />
       <WhatDefine />
-      <br />
       <WhatWeDo />
-      <br />
       <Footer />
     </>
   );

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
   return (
-
-    
     <nav className="navbar">
-      <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-md">
-        <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">
-          <span className="font-semibold text-xl tracking-tight">YAF</span>
+      <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-md sm:text-[14px] sm:justify-around">
+        <Link
+          to="/"
+          className="w-1/2 flex items-center flex-shrink-0 text-white mr-6"
+        >
+          <span className="font-bold text-xl tracking-tight ">YAF</span>
         </Link>
         <Link
           to="/about"
@@ -45,12 +45,12 @@ const Navbar = () => {
           to="/contact"
           className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
         >
-            <span
-              href="#resp"
-              className="inline-block p-[13px] text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-            >
-              Contact Us
-            </span>
+          <span
+            href="#resp"
+            className="inline-block p-[13px] text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          >
+            Contact Us
+          </span>
         </Link>
       </nav>
     </nav>

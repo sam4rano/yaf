@@ -56,7 +56,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div ref={slideRef} className="w-full select-none relative">
+    <div ref={slideRef} className="w-full relative">
       <div className="relative">
         <img
           src={featuredPics[currentIndex]}
@@ -67,7 +67,7 @@ export default function HeroSection() {
           to="/about"
           className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          <button className="hover:bg-blue-700 absolute top-[330px] right-[650px] bg-teal-500 p-[12px] text-white rounded-md">
+          <button className="border-white hover:border-transparent hover:text-teal-500 hover:bg-white absolute top-[330px] right-[650px] bg-teal-500 p-[12px] text-white rounded-md">
             JOIN US
           </button>
         </Link>
@@ -81,7 +81,7 @@ export default function HeroSection() {
           <AiOutlineVerticalRight size={30} />
         </button>
         <button
-          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
+          className="bg-black text-white rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
           onClick={handleOnNextClick}
         >
           <AiOutlineVerticalLeft size={30} />

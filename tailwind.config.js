@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx}", "./public/index.html"],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   extend: {
     transitionProperty: {
       left: "left",
+    },
+    fontFamily: {
+      sans: ["Inter var", ...defaultTheme.fontFamily.sans],
     },
   },
   variants: {
