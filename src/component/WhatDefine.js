@@ -3,9 +3,9 @@ import imgOne from '../images/impact.svg';
 
 const WhatDefine = () => {
   return (
-    <div className="flex justify-center sm:h-auto scroll-m-lg sm:mb-[80px] md:pb-[40px]">
-      <div className="flex flex-row justify-between rounded-lg bg-white max-h-[400px] sm:flex-col">
-        <div className="w-[50%] p-6 flex flex-col justify-start bg-teal-500 hover:bg-[#f1c40f] sm:w-full">
+    <div className="flex justify-center sm:h-auto scroll-m-lg sm:mb-[80px] md:pb-[60px]">
+      <div className="flex flex-row justify-between rounded-lg bg-white max-h-[500px] md:h-auto sm:flex-col">
+        <div className="w-[50%] p-6 flex flex-col justify-center bg-teal-500 hover:bg-[#f1c40f] sm:w-full align-middle">
           <h3 className="text-white text-xl font-bold mb-2 p-md sm:font-medium sm:text-md sm:text-center sm:pt-md">
             WHAT DEFINE US
           </h3>

@@ -6,8 +6,8 @@ import imgFour from "../images/teamwork.svg";
 
 const WhatWeDo = () => {
   return (
-    <div className="flex flex-col bg-gray-400 sm:h-auto">
-      <div className="text-xl font-bold mb-4 p-md flex justify-center text-center text-white">
+    <div className="flex flex-col bg-gray-300 sm:h-auto p-[20px]">
+      <div className="text-2xl font-bold mb-4 p-md flex justify-center text-center text-white">
         WHAT WE DO
       </div>
       <div className="flex flex-row sm:flex-col">
