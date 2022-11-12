@@ -4,12 +4,13 @@ import WhoWeAre from './WhoWeAre';
 import WhatDefine from './WhatDefine';
 import Footer from './Footer';
 import WhatWeDo from './WhatWeDo';
+import Navbar from './Navbar';
 
-import Testimonial from './Testimonial';
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <HeroSection />
       <br />
       <WhoWeAre />
