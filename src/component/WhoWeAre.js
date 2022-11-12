@@ -3,7 +3,7 @@ import imgOne from '../images/colab.svg';
 
 const WhoWeAre = () => {
   return (
-    <div className="flex justify-center sm:h-auto sm:mt-[100px] sm:pt-[10px]">
+    <div className="flex justify-center sm:h-auto sm:mt-[100px] sm:pt">
       <div className="flex flex-row justify-between rounded-lg bg-white shadow-lg max-h-[400px] sm:flex-col-reverse">
         <img
           className=" w-1/2 h-9 md:h-auto object-cover md:w-48 pr-md rounded-t-lg md:rounded-none md:rounded-l-lg sm:w-full"
