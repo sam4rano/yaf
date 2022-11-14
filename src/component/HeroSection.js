@@ -13,7 +13,7 @@ const HeroSection = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "450px",
+        height: "550px",
         width: "100%",
       }}
     >
