@@ -1,87 +1,62 @@
-import React from 'react'
-
+import React, { useState } from 'react';
+import people from './Data';
+import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 const Testimonial = () => {
+  const [index, setIndex] = useState(0);
+  const { name, job, image, text } = people[index];
+  const checkNumber = (number) => {
+    if (number > people.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return people.length - 1;
+    }
+    return number;
+  };
+  const nextPerson = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+  };
+  const prevPerson = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return checkNumber(newIndex);
+    });
+  };
+  const randomPerson = () => {
+    let randomNumber = Math.floor(Math.random() * people.length);
+    if (randomNumber === index) {
+      randomNumber = index + 1;
+    }
+    setIndex(checkNumber(randomNumber));
+  };
+
   return (
-    <>
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide relative carousel-dark"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner relative w-full overflow-hidden">
-          <div class="carousel-item active relative float-left w-full text-center">
-            <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi, voluptas
-              nostrum quisquam!"
-            </p>
-            <div class="mt-12 mb-6 flex justify-center">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                class="rounded-full w-24 h-24 shadow-lg"
-                alt="smaple im1"
-              />
-            </div>
-            <p class="text-gray-500">- Anna Morian</p>
-          </div>
-          <div class="carousel-item relative float-left w-full text-center">
-            <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-              "Neque cupiditate assumenda in maiores repudiandae mollitia
-              adipisci maiores repudiandae mollitia consectetur adipisicing
-              architecto elit sed adipiscing elit."
-            </p>
-            <div class="mt-12 mb-6 flex justify-center">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
-                class="rounded-full w-24 h-24 shadow-lg"
-                alt="smaple im2"
-              />
-            </div>
-            <p class="text-gray-500">- Teresa May</p>
-          </div>
-          <div class="carousel-item relative float-left w-full text-center">
-            <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur est laborum neque
-              cupiditate assumenda in maiores."
-            </p>
-            <div class="mt-12 mb-6 flex justify-center">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
-                class="rounded-full w-24 h-24 shadow-lg"
-                alt="smaple im"
-              />
-            </div>
-            <p class="text-gray-500">- Kate Allise</p>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon inline-block bg-no-repeat"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
+    <article className='review'>
+      <div className='img-container'>
+        <img src={image} alt={name} className='person-img' />
+        <span className='quote-icon'>
+          <FaQuoteRight />
+        </span>
+      </div>
+      <h4 className='author'>{name}</h4>
+      <p className='job'>{job}</p>
+      <p className='info'>{text}</p>
+      <div className='button-container'>
+        <button className='prev-btn' onClick={prevPerson}>
+          <FaChevronLeft />
         </button>
-        <button
-          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon inline-block bg-no-repeat"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
+        <button className='next-btn' onClick={nextPerson}>
+          <FaChevronRight />
         </button>
       </div>
-    </>
+      <button className='random-btn' onClick={randomPerson}>
+        surprise me
+      </button>
+    </article>
   );
-}
+};
 
-export default Testimonial
+export default Testimonial;

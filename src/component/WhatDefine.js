@@ -9,7 +9,7 @@ const WhatDefine = () => {
           <h3 className="text-white text-xl font-bold mb-2 p-md sm:font-medium sm:text-md sm:text-center sm:pt-md">
             WHAT DEFINE US
           </h3>
-          <p className="text-white text-base mb-2 p-md sm:text-[10px] sm:text-center">
+          <p className="text-white text-base mb-2 p-md sm:text-[13px] sm:text-center">
             Young alight initiative is an initiative that brings together young
             individuals who want to make a difference in their generation. A
             youthful generation driven to serve as an example of excellence and

@@ -1,12 +1,11 @@
 import React from "react";
-
-import Navbar from "../component/Navbar";
+import NavToggle from "../component/NavToggle";
 import Footer from "../component/Footer";
 
 const Support = () => {
   return (
     <>
-      <Navbar />
+      <NavToggle />
       <div>
         Support
       </div>

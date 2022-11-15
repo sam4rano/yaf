@@ -1,12 +1,14 @@
 import React from "react";
 import Card from "../component/Card";
-import Navbar from "../component/Navbar";
+import NavToggle from "../component/NavToggle";
 import Footer from "../component/Footer";
+import Modal from "../component/Modal";
 
 const Contact = () => {
   return (
     <>
-      <Navbar />
+      <NavToggle />
+      <Modal />
       <div>
         <Card />
       </div>

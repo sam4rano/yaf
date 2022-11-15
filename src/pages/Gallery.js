@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../component/Navbar";
+import NavToggle from "../component/NavToggle";
 import Footer from "../component/Footer"; 
 
 const Gallery = () => {
   return (
     <>
-      <Navbar />
+      <NavToggle />
       <section className="overflow-hidden text-gray-700 ">
         <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
           <div className="flex flex-wrap -m-1 md:-m-2">
