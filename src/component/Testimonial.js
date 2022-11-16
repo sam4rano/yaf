@@ -34,10 +34,10 @@ const Testimonial = () => {
   };
 
   return (
-    <article className='review'>
-      <div className='img-container'>
-        <img src={image} alt={name} className='person-img' />
-        <span className='quote-icon'>
+    <article className='review bg-white py-[1.5rem] shadow-md transition-all text-center'>
+      <div className='img-container relative w-[150px] h-[150px] border-[50%] m-auto mb-[1.5rem]'>
+        <img src={image} alt={name} className='person-img w-full block h-full object-cover border-[50%] relative' />
+        <span className='quote-icon absolute top-[0] left-[0] w-[2.5rem] h-[2.5rem] grid place-items-center'>
           <FaQuoteRight />
         </span>
       </div>

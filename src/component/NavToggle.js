@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavToggle = () => {
 
-  let [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="sm:flex flex justify-between bg-teal-500 py-4 md:px-7 px-7">
