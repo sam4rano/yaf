@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-teal-500 flex flex-row justify-around p-[8px] w-full h-auto sm:flex-wrap overflow-hidden">
-      <div className="w-1/5 text-xl font-bold mb-2 p-md">
-        <Link to="/" className="text-white-900 text-white">
-          YAF
-        </Link>
-      </div>
+      <Link
+        to="/"
+        className="w-1/5 mb-2 p-md font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-white"
+      >
+        <span className="text-3xl text-white mr-1 pt-2">
+          <ion-icon name="logo-ionic"></ion-icon>
+        </span>
+        YAF
+      </Link>
       <div className="flex flex-col w-1/5 sm:text-[13px]">
         <Link to="/about" className="text-white-500 text-md p-md text-white">
           About Us
@@ -24,10 +29,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex flex-col w-1/5 lg:text-[15px] md:text-[13px] sm:text-[10px] ">
-        <Link
-          to="/number"
-          className="text-white-500 p-md  text-white"
-        >
+        <Link to="/number" className="text-white-500 p-md  text-white">
           <span className="flex flex-row">
             <ion-icon name="call" color="white"></ion-icon>
             +2348064427860
