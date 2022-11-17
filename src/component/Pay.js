@@ -174,12 +174,18 @@ import React from 'react'
 const Pay = () => {
 
     
-
-  const publicKey = "pk_test_dd0e844a6ef1d157ad60ac1f4595e327fedf8c4e";
-  const amount = 1000000 // Remember, set in kobo!
+;
+  const publicKey = process.env.REACT_APP_PAYSTACK_PUBLIC_KEY;
+  const amount = 100000 // Remember, set in kobo!
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
+
+  const resetForm = () => {
+    setEmail("");
+    setName("");
+    setPhone("");
+  };
 
 
   const componentProps = {
@@ -191,8 +197,13 @@ const Pay = () => {
     },
     publicKey,
     text: "Donate Now",
-    onSuccess: () =>
-      alert("Thanks for donating for a greater cause! Come back soon!!"),
+    onSuccess: ({ reference }) => {
+      alert(
+        `Your Donation was successful! Transaction reference: ${reference}`
+      );
+      resetForm();
+    },
+
     onClose: () => alert("Wait! Your support is our oil"),
   };
 
