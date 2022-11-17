@@ -10,9 +10,9 @@ const Contact = () => {
       <NavToggle />
       <div>
         <iframe
-          className="h-[600px] w-full pt-[2rem]"
+          className="h-[600px] w-full pt-[4rem]"
           title="YAF form"
-          src="https://forms.gle/YFtKbyPteGYv4zJGA"
+          src="https://forms.gle/ZSWKpgi3oVAuZQHPA"
         ></iframe>
       </div>
 

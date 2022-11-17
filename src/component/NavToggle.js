@@ -10,7 +10,7 @@ const NavToggle = () => {
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="sm:flex flex justify-between bg-teal-500 py-4 md:px-7 px-7">
         <Link to="/"
-          className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+          className="font-bold pl-[8px] pt-[4px] text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-white"
         >
           <span className="text-3xl text-white mr-1 pt-2">
@@ -27,7 +27,7 @@ const NavToggle = () => {
         </div>
 
         <ul
-          className={`md:flex sm:items-center md:pb-0 pb-12 absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex p-[8px] sm:items-center md:pb-0 pb-8 absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
@@ -58,7 +58,7 @@ const NavToggle = () => {
               href="#responsive-header"
               className="block text-[16px] mt-4 lg:inline-block lg:mt-0 text-white p-[13px] md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
             >
-              SUPPORT
+              DONATION
             </span>
           </Link>
           <Link

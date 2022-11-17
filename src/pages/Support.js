@@ -1,65 +1,64 @@
+import React from "react";
+import NavToggle from "../component/NavToggle";
+import Footer from "../component/Footer";
+import Pay from "../component/Pay";
+
+const Support = () => {
+  return (
+    <>
+      <NavToggle />
+      <Pay />
+      <Footer />
+    </>
+  );
+};
+
+export default Support;
+
+
 // import React from "react";
 // import NavToggle from "../component/NavToggle";
 // import Footer from "../component/Footer";
 
-// const Support = () => {
-//   return (
-//     <>
-//       <NavToggle />
-//       <div>
-//         Support
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default Support;
-
-
-import React from "react";
-import NavToggle from "../component/NavToggle";
-import Footer from "../component/Footer";
-
-import { PaystackButton } from "react-paystack";
+// import { PaystackButton } from "react-paystack";
  
 
-  const config = {
-    reference: new Date().getTime().toString(),
-    email: "user@example.com",
-    amount: 20000,
-    publicKey: "pk_test_dsdfghuytfd2345678gvxxxxxxxxxx",
-  };
+//   const config = {
+//     reference: new Date().getTime().toString(),
+//     email: "user@example.com",
+//     amount: 20000,
+//     publicKey: "pk_test_dsdfghuytfd2345678gvxxxxxxxxxx",
+//   };
 
-  const Support = () => {
-    // you can call this function anything
-    const handlePaystackSuccessAction = (reference) => {
-      // Implementation for whatever you want to do with reference and after success call.
-      console.log(reference);
-    };
+//   const Support = () => {
+//     // you can call this function anything
+//     const handlePaystackSuccessAction = (reference) => {
+//       // Implementation for whatever you want to do with reference and after success call.
+//       console.log(reference);
+//     };
 
-    // you can call this function anything
-    const handlePaystackCloseAction = () => {
-      // implementation for  whatever you want to do when the Paystack dialog closed.
-      console.log("closed");
-    };
+//     // you can call this function anything
+//     const handlePaystackCloseAction = () => {
+//       // implementation for  whatever you want to do when the Paystack dialog closed.
+//       console.log("closed");
+//     };
 
-    const componentProps = {
-      ...config,
-      text: "Paystack Button Implementation",
-      onSuccess: (reference) => handlePaystackSuccessAction(reference),
-      onClose: handlePaystackCloseAction,
-    };
+//     const componentProps = {
+//       ...config,
+//       text: "Paystack Button Implementation",
+//       onSuccess: (reference) => handlePaystackSuccessAction(reference),
+//       onClose: handlePaystackCloseAction,
+//     };
 
-    return (
-      <>
-        <NavToggle />
-        <div className="App">
-          <PaystackButton {...componentProps} />
-        </div>
-        <Footer />
-      </>
-    );
-  }
+//     return (
+//       <>
+//         <NavToggle />
+//         <div className="App">
+//           <PaystackButton {...componentProps} />
+//         </div>
+//         <Footer />
+//       </>
+//     );
+//   }
 
-  export default Support;
+//   export default Support;
