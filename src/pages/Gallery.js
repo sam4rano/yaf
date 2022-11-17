@@ -6,8 +6,8 @@ const Gallery = () => {
   return (
     <>
       <NavToggle />
-      <section className="overflow-hidden text-gray-700 ">
-        <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+      <section className="overflow-hidden h-[400px] hover:from-pink-500 hover:to-yellow-500 text-gray-700 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+        {/* <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
           <div className="flex flex-wrap -m-1 md:-m-2">
             <div className="flex flex-wrap w-1/3">
               <div className="w-full p-1 md:p-2">
@@ -64,7 +64,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <Footer />
     </>
