@@ -9,7 +9,8 @@ const NavToggle = () => {
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="sm:flex flex justify-between bg-teal-500 py-4 md:px-7 px-7">
-        <Link to="/"
+        <Link
+          to="/"
           className="font-bold pl-[8px] pt-[4px] text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-white"
         >
@@ -21,13 +22,13 @@ const NavToggle = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl text-white right-8 top-6 pb-md cursor-pointer md:hidden lg:hidden"
+          className="text-3xl text-white right-8 top-[10px] pb-[20px] cursor-pointer md:hidden lg:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
 
         <ul
-          className={`md:flex p-[8px] sm:items-center md:pb-0 pb-8 absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex p-[8px] sm:items-center md:pb-[20px] md:pt-[50px] sm:pt-[50px] pb-[10px] absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
