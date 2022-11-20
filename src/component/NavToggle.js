@@ -22,13 +22,13 @@ const NavToggle = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl text-white right-8 top-[10px] pb-[20px] cursor-pointer md:hidden lg:hidden"
+          className="text-3xl text-white right-8 top-[10px] cursor-pointer md:hidden lg:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
 
         <ul
-          className={`md:flex p-[8px] sm:items-center md:pb-[20px] md:pt-[50px] sm:pt-[50px] pb-[10px] absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex p-[8px] sm:items-center md:pb-[-1rem] md:pt-[50px] sm:pt-[50px] pb-[10px] absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
