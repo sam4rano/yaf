@@ -2,7 +2,6 @@
 
 import React from "react";
 import imgOne from "../images/Happy.jpeg";
-import { Link } from "react-router-dom";
 import JoinUs from "./JoinUs";
 
 const HeroSection = () => {
