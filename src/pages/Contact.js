@@ -11,7 +11,7 @@ const Contact = () => {
         <iframe
           className="h-[600px] w-full pt-[4rem]"
           title="YAF form"
-          src="https://forms.gle/ZSWKpgi3oVAuZQHPA"
+          src="https://forms.gle/Ad7ioLjqACq5F82C8"
         ></iframe>
       </div>
       <Footer />

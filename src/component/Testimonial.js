@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import people from './Data';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
+
+
 const Testimonial = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
