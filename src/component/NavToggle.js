@@ -7,8 +7,8 @@ const NavToggle = () => {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
-      <div className="sm:flex flex justify-between bg-teal-500 py-4 md:px-7 px-7">
+    <section className="shadow-md w-full fixed top-0 left-0">
+      <div className="sm:flex flex justify-between bg-teal-500 md:mt-[-2rem] sm:mt-[1px]">
         <Link
           to="/"
           className="font-bold pl-[8px] pt-[4px] text-2xl cursor-pointer flex items-center font-[Poppins] 
@@ -28,20 +28,20 @@ const NavToggle = () => {
         </div>
 
         <ul
-          className={`md:flex p-[8px] sm:items-center md:pb-[-1rem] md:pt-[50px] sm:pt-[50px] pb-[10px] absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20 " : "top-[-490px]"
+          className={`md:flex pr-[10px] pt-[-1rem] sm:items-center md:pb-[-1rem] md:pt-[50px] sm:pt-[50px] pb-[10px] absolute lg:flex lg:flex-row lg:justify-end md:static lg:absolute lg:top-[2rem]  bg-teal-500  md:z-auto z-[-1] left-0 w-full md:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? "top-[20px] " : "top-[-490px]"
           }`}
         >
           <Link
             to="/about"
-            className="block text-[16px] mt-4 lg:inline-block lg:mt-0 p-[13px] text-white md:text-sm px-4 py-2 leading-none rounded hover:text-teal-500 hover:bg-white"
+            className="block text-[16px] mt-2 lg:inline-block lg:mt-0 p-[13px] text-white md:text-sm px-4 py-2 leading-none rounded hover:text-teal-500 hover:bg-white"
           >
             ABOUT
           </Link>
           <Link to="/gallery">
             <span
               href="#responsive-header"
-              className="block text-[16px] mt-4 lg:inline-block lg:mt-0 mr-4 p-[13px] text-white md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
+              className="block text-[16px] mt-2 lg:inline-block lg:mt-0 mr-4 p-[13px] text-white md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
             >
               GALLERY
             </span>
@@ -49,7 +49,7 @@ const NavToggle = () => {
           <Link to="/event">
             <span
               href="#responsive-header"
-              className="block text-[16px] mt-4 lg:inline-block lg:mt-0 p-[13px] text-white md:text-sm px-4 py-2 mr-4 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
+              className="block text-[16px] mt-2 lg:inline-block lg:mt-0 p-[13px] text-white md:text-sm px-4 py-2 mr-4 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
             >
               EVENT
             </span>
@@ -57,20 +57,20 @@ const NavToggle = () => {
           <Link to="/support">
             <span
               href="#responsive-header"
-              className="block text-[16px] mt-4 lg:inline-block lg:mt-0 text-white p-[13px] md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
+              className="block text-[16px] lg:inline-block text-white p-[13px] md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
             >
               DONATION
             </span>
           </Link>
           <Link
             to="/contact"
-            className="block bg-[#f1c40f] text-[16px] mt-4 lg:inline-block lg:mt-0 text-white p-[13px] md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
+            className="block bg-[#f1c40f] text-[16px] lg:inline-block text-white p-[13px] md:text-sm px-4 py-2 leading-none rounded hover:border-transparent hover:text-teal-500 hover:bg-white"
           >
             CONTACT US
           </Link>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
