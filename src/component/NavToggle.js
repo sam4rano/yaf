@@ -8,7 +8,7 @@ const NavToggle = () => {
   const [open, setOpen] = useState(false);
   return (
     <section className="shadow-md w-full fixed top-0 left-0">
-      <div className="sm:flex flex justify-between bg-teal-500 md:mt-[-2rem] sm:mt-[1px]">
+      <div className="sm:flex flex justify-between bg-teal-500 md:mt-[-2rem]">
         <Link
           to="/"
           className="font-bold pl-[8px] pt-[4px] text-2xl cursor-pointer flex items-center font-[Poppins] 
