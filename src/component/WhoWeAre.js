@@ -18,7 +18,7 @@ const WhoWeAre = () => {
             Young alight initiative is an initiative that brings together young
             individuals who want to make a difference in their generation. A
             youthful generation driven to serve as an example of excellence and
-            godliness. This initiative will be dedicated and committed to
+            godliness. This initiative is dedicated and committed to
             nurturing and building capacity for a purpose driven young
             generation. The core watchword is standing for what is right,
             equipping and training the upcoming generation to create a society

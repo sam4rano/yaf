@@ -13,7 +13,7 @@ const WhatWeDo = () => {
       <div className="flex flex-row sm:flex-col">
         <div className="flex flex-row justify-between sm:flex-col">
           <div className="flex flex-col rounded-md m-md w-[300] p-sm bg-white hover:bg-[#f1c40f] hover:text-white">
-            <h1 className="font-[500] text-center">Mentoring</h1>
+            <h1 className="font-[500] text-center">Mentorship</h1>
             <img src={imgOne} alt="img_one" className="flex" />
           </div>
           <div className=" flex flex-col rounded-md m-md w-[300] p-sm bg-white hover:bg-[#f1c40f] hover:text-white">
@@ -23,7 +23,7 @@ const WhatWeDo = () => {
         </div>
         <div className="flex flex-row justify-between sm:flex-col">
           <div className="flex flex-col rounded-md m-md p-sm w-[300] bg-white hover:bg-[#f1c40f] hover:text-white">
-            <h1 className="font-[500] text-center">Smart</h1>
+            <h1 className="font-[500] text-center">Training</h1>
             <img src={imgThree} alt="img_three" />
           </div>
           <div className="flex flex-col rounded-md m-md p-sm w-[300] bg-white hover:bg-[#f1c40f] hover:text-white">
