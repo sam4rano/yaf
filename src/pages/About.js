@@ -11,7 +11,7 @@ const About = () => {
       <NavToggle />
       <div className="flex pt-[6rem] w-full h-full flex-col sm:h-full md:h-full">
         <div className=" pb-[70px]">
-          <h1 className="text-2xl text-teal-500 font-bold mb-2 p-md sm:text-lg sm:font-medium">
+          <h1 className="text-2xl text-gray-700 font-bold mb-2 p-md sm:text-lg sm:font-medium">
             ABOUT US
           </h1>
           <div className="flex flex-col sm:text-sm">
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col align-middle justify-center h-full pb-[50px] sm:text-sm sm:h-full md:h-full">
-          <h2 className="text-center text-teal-500 text-2xl font-bold pb-[70px] sm:text-sm">
+          <h2 className="text-center text-gray-700 text-2xl font-bold pb-[70px] sm:text-sm">
             ALIGHT TEAM
           </h2>
           <div className="flex h-auto flex-row flex-wrap lg:pb-[100px] sm:pb-[80px] md:pb-[60px] m-[10px] justify-center align-middle sm:h-full sm:mb-[-10rem] md:h-full">

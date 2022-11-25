@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const JoinUs = () => {
   return (
     <div className="mt-[14rem] sm:mt-[8rem] flex flex-col justify-center align-middle text-center border-0 bg-[#e6eaef] w-[30%] sm:w-[40%] text-sm sm:text-[14px] px-4 py-2 leading-none rounded text-white border-white hover:text-teal-500">
-      <h1 className="text-gray-700  text-xl p-md sm:text-sm md:text-[16px]">
+      <h1 className="text-gray-600  text-xl p-md sm:text-sm md:text-[16px]">
         Nurturing a confident and Capable youth to become leaders, contributors,
         collaborators & impact driven
       </h1>
-      <h1 className="text-gray-700  text-xl p-md sm:text-sm md:text-[16px]">
+      <h1 className="text-gray-600  text-xl p-md sm:text-sm md:text-[16px]">
         Join the train as a contributor & partaker
       </h1>
       <Link

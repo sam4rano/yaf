@@ -1,7 +1,7 @@
-const people = [
+const data = [
   {
     id: 1,
-    name: "susan smith",
+    name: "Joe Willock",
     job: "web developer",
     image:
       "https://res.cloudinary.com/sam4rano/image/upload/v1624884324/Sam300LPics/IMG_20210428_161909_l9g8lg.jpg",
@@ -9,7 +9,7 @@ const people = [
   },
   {
     id: 2,
-    name: "Jane Doe",
+    name: "Matt Ryan",
     job: "web designer",
     image:
       "https://res.cloudinary.com/sam4rano/image/upload/v1624884333/Sam300LPics/IMG_20210427_171241_yqmbpv.jpg",
@@ -33,4 +33,4 @@ const people = [
   },
 ];
 
-export default people;
+export default data;
