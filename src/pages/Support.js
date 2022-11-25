@@ -1,7 +1,7 @@
 import React from "react";
 import NavToggle from "../component/NavToggle";
 import Footer from "../component/Footer";
-import Pay from "../component/Pay";
+import Pay from "../component/Pay2";
 
 const Support = () => {
   return (

@@ -4,34 +4,32 @@ import React from "react";
 
 const Pay = () => {
 
-    
+    const [amount, setAmount] = useState("");
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
-
+    
   
     const config = {
       public_key: "FLWPUBK_TEST-88212015506a95a9f383a29220eb0811-X",
       tx_ref: Date.now(),
-      amount: " ",
+      amount: amount,
       currency: "NGN",
       payment_options: "card,mobilemoney,ussd",
-
       customer: {
-        email: " ",
-        phone_number: "",
-        name: " ",
+        email: email,
+        phone_number: phone,
+        name: name,
       },
-
       customizations: {
-        title: "YAI Donation",
-        description: "Payment to support YAI initiative",
+        title: "YAI payment",
+        description: "Payment for items in cart",
         logo: "https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg",
       },
     };
 
     const handleFlutterPayment = useFlutterwave(config);
-
+    
   
 
   return (
@@ -84,22 +82,36 @@ const Pay = () => {
               required
             />
           </div>
+          <div className="mb-4 w-full group">
+            <label htmlFor="number">Amount</label>
+
+            <input
+              onChange={(e) => setAmount(e.target.value)}
+              value={amount}
+              type="text"
+              name="amount"
+              id="amount"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-teal-500 peer"
+              placeholder=" "
+              required
+            />
+          </div>
           <div className="mt-[2rem] w-full group">
+            
             <button
-                className="text-white p-[1rem] text-md bg-teal-500 hover:bg-[#f1c40f] focus:ring-4 focus:outline-none focus:ring-teal-500 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-teal-500 dark:hover:bg-[#f1c40f] dark:focus:ring-blue-800"
-                onClick={() => {
+              className="text-white p-[1rem] text-md bg-teal-500 hover:bg-[#f1c40f] focus:ring-4 focus:outline-none focus:ring-teal-500 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-teal-500 dark:hover:bg-[#f1c40f] dark:focus:ring-blue-800"
+              onClick={() => {
                 handleFlutterPayment({
-                    callback: (response) => {
+                  callback: (response) => {
                     console.log(response);
                     closePaymentModal(); // this will close the modal programmatically
-                    },
-                    onClose: () => {},
+                  },
+                  onClose: () => {},
                 });
-                }}
+              }}
             >
-                DONATE 
+              DONATE
             </button>
-
           </div>
         </form>
       </div>
