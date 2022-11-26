@@ -4,7 +4,7 @@ import WhoWeAre from './WhoWeAre';
 import WhatDefine from './WhatDefine';
 import Footer from './Footer';
 import WhatWeDo from './WhatWeDo';
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import NavToggle from "./NavToggle";
 
 
@@ -17,7 +17,7 @@ const Home = () => {
       <WhoWeAre />
       <WhatDefine />
       <WhatWeDo />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Footer />
     </>
   );
