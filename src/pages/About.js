@@ -37,8 +37,8 @@ const About = () => {
           <h2 className="text-center text-gray-700 text-2xl font-bold pb-[70px] sm:text-sm">
             ALIGHT TEAM
           </h2>
-          <div className="flex h-auto flex-row flex-wrap lg:pb-[100px] sm:pb-[80px] md:pb-[60px] m-[10px] justify-center align-middle sm:h-full sm:mb-[-10rem] md:h-full">
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] md:mb-[100px]">
+          <div className="flex h-auto flex-row flex-wrap lg:pb-[100px] sm:pb-[80px] md:pb-[60px] m-[10px] md:justify-between lg:justify-between sm:justify-center align-middle sm:h-full sm:mb-[-10rem] md:h-full">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center "
@@ -64,7 +64,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center "
@@ -89,7 +89,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center"
@@ -114,7 +114,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center"
@@ -140,8 +140,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row flex-wrap pb-[30px] m-[10px] justify-center align-middle sm:h-full sm:mb-[-10rem] md:h-full">
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] md:mb-[100px]">
+          <div className="flex flex-row flex-wrap pb-[30px] m-[10px] lg:justify-between md:justify-between justify-center align-middle sm:h-full sm:mb-[-10rem] md:h-full">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center"
@@ -167,7 +167,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center"
@@ -192,7 +192,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center"
@@ -217,7 +217,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
+            <div className="max-w-[300px] sm:w-full bg-white rounded-2xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 sm:max-h-[300px] sm:mb-[100px] sm:pb-2xl md:mb-[100px]">
               <a href="#c">
                 <img
                   className="rounded-full w-[150px] sm:w-[150px] h-[150px] sm:h-[150px] text-center mx-auto pt-sm  sm:flex sm:align-middle justify-center"
