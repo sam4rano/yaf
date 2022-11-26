@@ -11,8 +11,8 @@ const Contact = () => {
         <iframe
           className="h-[600px] w-full pt-[4rem]"
           title="YAF form"
-          sandbox="allow-scripts allow-modal"
-          loading="eager"
+          
+          loading="lazy"
           src="https://docs.google.com/forms/d/e/1FAIpQLScvow0ZTitREYeZv7D-f0llkvZlzYrn99kBdJpuepNOq4Te7g/viewform?usp=sf_link"
         ></iframe>
       </div>
