@@ -13,9 +13,9 @@ const JoinUs = () => {
       </h1>
       <Link
         to="/contact"
-        className="ml-[8rem] sm:ml-[2rem] text-center align-middle mb-md sm:w-[100px] w-[120px] md:w-[100px] md:ml-[80px] mt-4 lg:inline-block lg:mt-0 p-[10px]  text-white text-sm px-4 py-2 leading-none rounded bg-[#f1c40f] hover:text-teal-500 hover:bg-white"
+        className="ml-[8rem] sm:ml-[2rem] text-center align-middle mb-md sm:w-[100px] w-[120px] md:w-[100px] md:ml-[80px] mt-4 lg:inline-block lg:mt-0 p-[10px]  text-gray-600 text-sm px-4 py-2 leading-none rounded bg-[#f1c40f] hover:bg-white"
       >
-        <span className="font-bold m sm:font-semi-bold text-xl tracking-tight p-md sm:text-[14px] md:text-[14px]">
+        <span className="font-bold sm:font-semi-bold text-xl tracking-tight p-md sm:text-[14px] md:text-[14px]">
           JOIN US
         </span>
       </Link>
