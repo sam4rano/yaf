@@ -10,7 +10,7 @@ const Footer = () => {
       text-white"
       >
         <span className="text-3xl text-grey-600 mr-1 pt-2">
-          <ion-icon name="logo-ionic "></ion-icon>
+          <ion-icon name="logo-ionic"></ion-icon>
         </span>
         YAF
       </Link>
